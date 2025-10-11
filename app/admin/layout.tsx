@@ -16,7 +16,9 @@ export default function AdminLayout({
   return (
     <>
       <html>
-        <body>{children}</body>
+        <body className="flex justify-center items-center flex-col min-h-screen bg-slate-100">
+          {children}
+        </body>
       </html>
     </>
   );
