@@ -5,8 +5,7 @@ import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import pic1 from "@/public/images/Transition Programme Design cover.png";
-import pic2 from "../../public/images/Transition Programme Design inner.png";
+
 
 export default function ImageSlider() {
   const images = [
