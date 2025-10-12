@@ -4,7 +4,7 @@ import QRcode from "qrcode";
 export async function GET(): Promise<Response> {
   try {
     // Replace with your actual deployed base URL (when hosted on Vercel)
-    const baseURL = 'https://your-project-name.vercel.app';
+    const baseURL = 'https://ralabprt.vercel.app';
     const directLink = `${baseURL}/user`;
 
     const generationOfQRcode = await QRcode.toDataURL(directLink);
