@@ -1,18 +1,19 @@
 import { NextResponse } from "next/server";
 import QRcode from "qrcode";
 
-export async function GET() {
+export async function GET(): Promise<Response> {
   try {
-    //link to page url gallery
-    const baseURL = 'http://.app'
+    // Replace with your actual deployed base URL (when hosted on Vercel)
+    const baseURL = 'https://your-project-name.vercel.app';
     const directLink = `${baseURL}/user`;
 
     const generationOfQRcode = await QRcode.toDataURL(directLink);
 
     return NextResponse.json({ qrcode: generationOfQRcode });
   } catch (error) {
+    console.error(error);
     return NextResponse.json(
-      { error: error},
+      { error: (error as Error).message },
       { status: 500 }
     );
   }
