@@ -12,10 +12,13 @@ export default function ImageSlider() {
   const swiperRef = useRef<SwiperType | null>(null);
 
   const images = [
-    "/images/slide1.jpeg",
-    "/images/slide2.jpg",
-    "/images/slide3.jpg",
-    "/images/slide4.jpeg",
+    "/images/mj1.jpeg",
+    "/images/mj2.jpg",
+    "/images/mj3.jpg",
+    "/images/mj4.jpg",
+    "/images/mj5.jpg",
+    "/images/mj6.jpg",
+    "/images/mj7.jpg",
   ];
 
   return (
